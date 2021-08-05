@@ -1,0 +1,169 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "CryptoSwift",
+        "repositoryURL": "https://github.com/krzyzanowskim/CryptoSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "8d4f6384e0a8cc41f2005247241dd553963a492a",
+          "version": "1.4.1"
+        }
+      },
+      {
+        "package": "CSQLite",
+        "repositoryURL": "https://github.com/stephencelis/CSQLite.git",
+        "state": {
+          "branch": null,
+          "revision": "9106e983d5e3d5149ee35281ec089484b0def018",
+          "version": "0.0.3"
+        }
+      },
+      {
+        "package": "FTAPIKit",
+        "repositoryURL": "https://github.com/futuredapp/FTAPIKit.git",
+        "state": {
+          "branch": "main",
+          "revision": "db527a2fdb466d5094b997424dd4a7bb3283b37c",
+          "version": null
+        }
+      },
+      {
+        "package": "gir2swift",
+        "repositoryURL": "https://github.com/rhx/gir2swift.git",
+        "state": {
+          "branch": "main",
+          "revision": "fa8fe5023a43c8b3ed82fe3fb528c9bc88618341",
+          "version": null
+        }
+      },
+      {
+        "package": "SQLite.swift",
+        "repositoryURL": "https://github.com/stephencelis/SQLite.swift.git",
+        "state": {
+          "branch": null,
+          "revision": "0a9893ec030501a3956bee572d6b4fdd3ae158a1",
+          "version": "0.12.2"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "83b23d940471b313427da226196661856f6ba3e0",
+          "version": "0.4.4"
+        }
+      },
+      {
+        "package": "Atk",
+        "repositoryURL": "https://github.com/rhx/SwiftAtk.git",
+        "state": {
+          "branch": "main",
+          "revision": "bd6856b5d66bbbb0943c263f2e559aaffc4e4700",
+          "version": null
+        }
+      },
+      {
+        "package": "Cairo",
+        "repositoryURL": "https://github.com/rhx/SwiftCairo.git",
+        "state": {
+          "branch": "main",
+          "revision": "671ff24df96afef49d9d69c98d7860bd7b639bf8",
+          "version": null
+        }
+      },
+      {
+        "package": "Gdk",
+        "repositoryURL": "https://github.com/rhx/SwiftGdk.git",
+        "state": {
+          "branch": "main",
+          "revision": "e92c5e23b8db9430499294ee6cb4f467a3512825",
+          "version": null
+        }
+      },
+      {
+        "package": "GdkPixbuf",
+        "repositoryURL": "https://github.com/rhx/SwiftGdkPixbuf.git",
+        "state": {
+          "branch": "main",
+          "revision": "a3223efe5437e48a652b90ccbb6e0f3595e15941",
+          "version": null
+        }
+      },
+      {
+        "package": "GIO",
+        "repositoryURL": "https://github.com/rhx/SwiftGIO.git",
+        "state": {
+          "branch": "main",
+          "revision": "35e8d6afbf7e9d349907fdfe257985b850c2b11f",
+          "version": null
+        }
+      },
+      {
+        "package": "GLib",
+        "repositoryURL": "https://github.com/rhx/SwiftGLib.git",
+        "state": {
+          "branch": "main",
+          "revision": "1f9e7a8f927054a72ea5d65815369a6c451707cb",
+          "version": null
+        }
+      },
+      {
+        "package": "GModule",
+        "repositoryURL": "https://github.com/rhx/SwiftGModule.git",
+        "state": {
+          "branch": "main",
+          "revision": "f67e2b2e8398267ebb2fd979527d7e097e38b5cf",
+          "version": null
+        }
+      },
+      {
+        "package": "GLibObject",
+        "repositoryURL": "https://github.com/rhx/SwiftGObject.git",
+        "state": {
+          "branch": "main",
+          "revision": "a0d7d6fe7e2990629e0d4d704abb8069aa9a0a3c",
+          "version": null
+        }
+      },
+      {
+        "package": "Gtk",
+        "repositoryURL": "https://github.com/rhx/SwiftGtk.git",
+        "state": {
+          "branch": "main",
+          "revision": "48238d756c992e968c616acf185253a950b64f9c",
+          "version": null
+        }
+      },
+      {
+        "package": "SwiftLibXML",
+        "repositoryURL": "https://github.com/rhx/SwiftLibXML.git",
+        "state": {
+          "branch": "main",
+          "revision": "5583864b6518d514c76c75f997f77c304d204c84",
+          "version": null
+        }
+      },
+      {
+        "package": "Pango",
+        "repositoryURL": "https://github.com/rhx/SwiftPango.git",
+        "state": {
+          "branch": "main",
+          "revision": "097a39d1fc7f4dcabaf27b0e1c8da8c1d7a28ff8",
+          "version": null
+        }
+      },
+      {
+        "package": "PangoCairo",
+        "repositoryURL": "https://github.com/rhx/SwiftPangoCairo.git",
+        "state": {
+          "branch": "main",
+          "revision": "8434da2f410609dd7f30affc50c0f2cc83361ac3",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
