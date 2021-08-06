@@ -3,4 +3,7 @@ import BurningFioAPI
 import BurningModels
 import BurningStorage
 
-print("Hello, world!")
+let storage = try! Storage.init(password: "abcdefghabcdefgh")
+
+try! storage.setToken(Token.init(accessToken: "abcdef"))
+print(try! storage.getToken())
