@@ -2,11 +2,9 @@ import SQLite
 import Foundation
 import CryptoSwift
 
-
-private let ivLength = 16
-private func randomString() -> String {
+private func randomString(length: Int) -> String {
     let base = (33...126).map { Character(UnicodeScalar($0))}
-    let selection = (0..<ivLength).map { _ in base.randomElement()! }
+    let selection = (0..<length).map { _ in base.randomElement()! }
     return selection.reduce(into: "") { result, character in
         result += String(character)
     }
@@ -25,11 +23,18 @@ public final class Storage {
 
     static let defaultDirectoryName = "BurningRingOfFire"
     static let defaultDatabaseName = "burningStorage.sqlite3"
+    static let keyLength = 32
+    static let assumedBlockSize = 16
 
     public init(file path: String? = nil, password: String) throws {
         self.connection = try Connection(path ?? (try Storage.initializeDefaultStorage()))
         self.registered = Storage.allTables
-        self.encryption = try AES.init(key: password, iv: randomString())
+        var hasher = SHA3(variant: .sha512)
+        let hashed = Data(try hasher.finish(withBytes: password.bytes))
+
+        let iv = Array(randomString(length: Storage.assumedBlockSize).bytes.prefix(Storage.assumedBlockSize))
+        let key = Array(hashed.prefix(Storage.keyLength))
+        self.encryption = try AES(key: key, blockMode: CBC(iv: iv))
 
         try initialize()
     }

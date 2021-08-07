@@ -16,9 +16,10 @@ let package = Package(
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMajor(from: "1.4.1"))
     ],
     targets: [
-        .target(name: "BurningRingOfFire", dependencies: ["Gtk", "BurningModels", "BurningStorage", "BurningFioAPI"]),
+        .executableTarget(name: "BurningRingOfFire", dependencies: ["Gtk", "BurningModels", "BurningStorage", "BurningFioAPI"]),
         .target(name: "BurningStorage", dependencies: [.product(name: "SQLite", package: "SQLite.swift"), "CryptoSwift", "BurningModels"]),
         .target(name: "BurningFioAPI", dependencies: ["FTAPIKit", "BurningModels"]),
-        .target(name: "BurningModels", dependencies: [])
+        .target(name: "BurningModels", dependencies: []),
+        .testTarget(name: "BurningRingOfFireTests", dependencies: ["BurningRingOfFire"])
     ]
 )
