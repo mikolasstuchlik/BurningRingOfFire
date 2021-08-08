@@ -31,7 +31,7 @@ public final class Storage {
         self.registered = Storage.allTables
         var hasher = SHA3(variant: .sha512)
         let hashed = Data(try hasher.finish(withBytes: password.bytes))
-
+        
         let iv = Array(randomString(length: Storage.assumedBlockSize).bytes.prefix(Storage.assumedBlockSize))
         let key = Array(hashed.prefix(Storage.keyLength))
         self.encryption = try AES(key: key, blockMode: CBC(iv: iv))

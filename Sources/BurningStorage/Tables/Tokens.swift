@@ -2,11 +2,11 @@ import SQLite
 
 enum Tokens: TableBlueprint {
 
-    static let id = Expression<Int64>("id")
+    static let kind = Expression<String>("kind")
     static let token = Expression<String>("token")
 
     static func creator(_ builder: TableBuilder) {
-        builder.column(id, primaryKey: .autoincrement)
+        builder.column(kind, primaryKey: true)
         builder.column(token)
     }
 }
