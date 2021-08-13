@@ -6,7 +6,11 @@ import BurningStorage
 
 // MARK: - Main
 let status = Application.run(startupHandler: nil) { app in
-    let w = RootWindow.linkedInit(application: app)
+    let services = ServiceContainer()
+    let w = RootWindow.linkedInit(
+        controller: RootWindowController(inject: services),
+        arguments: app
+    )
     w.present()
     // TODO: Solve reference issue, remove hack
     w.ref()
