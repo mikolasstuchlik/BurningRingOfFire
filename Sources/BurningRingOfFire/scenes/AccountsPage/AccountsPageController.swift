@@ -6,7 +6,7 @@ final class AccountsPageController: Controller {
 
     func addToListEvent() { 
         counter += 1
-        scene?.modelAdd(title: "Line \(counter)", selected: Bool.random())
+        scene?.modelAdd(title: "Line \(counter)")
     }
 
     func removeFromListEvent() {

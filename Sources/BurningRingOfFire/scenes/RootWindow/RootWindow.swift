@@ -12,7 +12,6 @@ class RootWindow: AppWindow<RootWindowController, ApplicationRef> {
     private lazy var switcher: StackSwitcher! = StackSwitcherRef().link(to: StackSwitcher.self)?.apply {
         $0.set(stack: stack)
         $0.setHalign(align: .fill)
-        $0.set(canFocus: false)
     }
 
     private lazy var overview: Label = Label(text: "Overview")

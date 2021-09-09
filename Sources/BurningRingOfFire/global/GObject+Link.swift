@@ -20,4 +20,3 @@ extension GLibObject.ObjectProtocol {
         return new
     }
 }
-
